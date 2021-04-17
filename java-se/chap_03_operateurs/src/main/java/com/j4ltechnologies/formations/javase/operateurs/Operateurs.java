@@ -35,7 +35,7 @@ public class Operateurs {
         System.out.printf("poids = %s%n", poids);
 
         /*
-         * Les Operateurs Logiques
+         * Les Operateurs Logiques ( &&, &, ||, |, ^, ! )
          */
         boolean a = true;
         boolean b = false;
