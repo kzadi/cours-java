@@ -27,7 +27,7 @@ public class Conversion {
         System.out.printf("unByte = %s%n", unByte);
 
         byte b = 25;
-        //b = b + 1; //==> Ne compile pas: b+1 est de type int, ne peut etre affecté à un type byte
+        b = b + 1; //==> Ne compile pas: b+1 est de type int, ne peut etre affecté à un type byte
         b += 1; //==> Compile
     }
 }
