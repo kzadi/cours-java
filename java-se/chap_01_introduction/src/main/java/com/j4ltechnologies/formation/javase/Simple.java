@@ -37,7 +37,6 @@ public class Simple {
  *
  * Pour l'instant, vous pouvez vous contenter de considerer System.out.println comme un moyen
  * d'afficher dans la console
- *
  */
 
 class Tabs {
