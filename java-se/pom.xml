@@ -10,6 +10,7 @@
         <module>chap_04_decision</module>
         <module>chap_05_iteration</module>
         <module>chap_06_Classe_Objets</module>
+        <module>chap_07_tableaux</module>
     </modules>
     <parent>
         <groupId>com.j4ltechnologies.formation.java</groupId>
