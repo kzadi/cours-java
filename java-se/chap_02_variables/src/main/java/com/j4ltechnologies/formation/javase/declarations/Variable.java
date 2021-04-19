@@ -42,7 +42,7 @@ public class Variable {
         System.out.printf("prenom = %s\n", prenom);
 
         // Une variable declarée dans une methode doit etre initialisée avant d'etre utilisée
-         int varNonInitialise;
-         System.out.println("varNonInitialise = " + varNonInitialise);//Ne compile pas
+        // int varNonInitialise;
+        // System.out.println("varNonInitialise = " + varNonInitialise);//Ne compile pas
     }
 }

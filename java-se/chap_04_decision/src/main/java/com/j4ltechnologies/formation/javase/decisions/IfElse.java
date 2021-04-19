@@ -3,7 +3,10 @@ package com.j4ltechnologies.formation.javase.decisions;
 import java.util.Scanner;
 
 /**
- * Ce programme simule un panneau d'ascenseur qui saute le 13e étage.
+ * Classe IfElse, créée le 18/04/2021 à 15:58
+ *
+ * @author Joachim Zadi
+ * @version 1.0 du 18/04/2021
  */
 public class IfElse {
     public static void main(String[] args) {

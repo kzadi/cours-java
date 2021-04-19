@@ -3,15 +3,20 @@ package com.j4ltechnologies.formations.javase.operateurs;
 /**
  * Classe Operateurs, créée le 17/04/2021 à 19:05
  *
+ * Un opérateur est un symbole qui effectue un type d'opération spécifique sur un,
+ * deux ou trois opérandes et produit un résultat. Le type de l'opérateur et ses opérandes
+ * détermine le type d'opération effectuée sur les opérandes et le type de résultat produit.
+ *
  * @author Joachim Zadi
  * @version 1.0 du 17/04/2021
  */
 public class Operateurs {
     public static void main(String[] args) {
         /*
-         * Operateurs Arithmetiques (+,-,*,/,%)
-         * Operateurs Relationnels (>,>=,==,!=,<=,<)
-         * Operateurs Assignations (=, ++)
+         * Operateurs Arithmetiques        => (+,-,*,/,%)
+         * Operateurs Relationnels         => (>,>=,==,!=,<=,<)
+         * Operateurs Assignations         => (=, ++)
+         * Operateur de conversion ou cast => ()
          */
         int poids = 15;
 

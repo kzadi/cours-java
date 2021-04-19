@@ -3,7 +3,10 @@ package com.j4ltechnologies.formation.javase.decisions;
 import java.util.Scanner;
 
 /**
- * Ce programme simule un panneau d'ascenseur qui saute l'étage N°.
+ * Classe IfElseIf, créée le 18/04/2021 à 16:00
+ *
+ * @author Joachim Zadi
+ * @version 1.0 du 18/04/2021
  */
 public class IfElseIf {
     public static void main(String[] args) {
