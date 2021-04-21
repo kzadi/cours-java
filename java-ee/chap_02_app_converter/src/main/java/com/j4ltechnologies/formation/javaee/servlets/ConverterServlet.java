@@ -39,7 +39,7 @@ public class ConverterServlet extends HttpServlet {
 			request.setAttribute("resultat", resultat);
 			// doGet(request, response);
 		} catch (NumberFormatException e) {
-			String msgError = "Attention à votre saisie, vous devez saisir un nombre";
+			String msgError = "Erreur de saisie";
 			request.setAttribute("error", msgError);
 			// doGet(request, response);
 		} finally {
