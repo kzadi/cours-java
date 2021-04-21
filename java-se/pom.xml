@@ -9,8 +9,11 @@
         <module>chap_03_operateurs</module>
         <module>chap_04_decision</module>
         <module>chap_05_iteration</module>
-        <module>chap_06_Classe_Objets</module>
+        <module>chap_06_classe_objets</module>
         <module>chap_07_tableaux</module>
+        <module>chap_08_heritage</module>
+        <module>chap_09_classe_abstract</module>
+        <module>chap_10_interface</module>
     </modules>
     <parent>
         <groupId>com.j4ltechnologies.formation.java</groupId>
