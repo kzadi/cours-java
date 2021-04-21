@@ -15,6 +15,8 @@
         <module>chap_09_classe_abstract</module>
         <module>chap_10_interface</module>
         <module>chap_11_chaine_enumeration</module>
+        <module>chap_12_exceptions</module>
+        <module>chap_13_collections</module>
     </modules>
     <parent>
         <groupId>com.j4ltechnologies.formation.java</groupId>
