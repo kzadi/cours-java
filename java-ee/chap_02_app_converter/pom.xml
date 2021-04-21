@@ -3,30 +3,18 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <modules>
-        <module>chap_01_intro_Web_java</module>
-        <module>chap_02_app_converter</module>
-    </modules>
     <parent>
-        <artifactId>java</artifactId>
+        <artifactId>java-ee</artifactId>
         <groupId>com.j4ltechnologies.formation.java</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-
-    <packaging>pom</packaging>
-
-    <artifactId>java-ee</artifactId>
-
-    <properties>
-        <failOnMissingWebXml>false</failOnMissingWebXml>
-    </properties>
-
+    <artifactId>chap_02_app_converter</artifactId>
+    <packaging>war</packaging>
     <dependencies>
         <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>4.0.1</version>
+            <groupId>jstl</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
         </dependency>
     </dependencies>
-
 </project>
