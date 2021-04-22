@@ -30,9 +30,8 @@
         <h1 class="titre">Page de conversion</h1>
         <form class="m-3" method="post">
             <div class="mb-3">
-                <label for="celsius" class="form-label">Température en °C</label>
                 <input type="text" class="form-control" id="celsius" name="celsius"
-                       placeholder="Saisir la température en °C"/>
+                       placeholder="Saisir ici la température en °C"/>
             </div>
             <button type="submit" class="btn btn-valider">Valider</button>
             <button type="submit" class="btn btn-secondary float-end">Reset</button>
