@@ -50,7 +50,6 @@ public class Stagiaire {
 
 	@Override
 	public String toString() {
-		return "Stagiaire [id=" + id + ", nom=" + nom + ", age=" + age + ", createdAt=" + createdAt + "]";
+		return "Stagiaire [" + id + ", " + nom + ", " + age + " ans]";
 	}
-
 }

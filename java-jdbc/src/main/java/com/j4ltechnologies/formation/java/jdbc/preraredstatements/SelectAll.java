@@ -1,25 +1,26 @@
-package com.j4ltechnologies.formation.java.jdbc.statements;
-
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.sql.Timestamp;
+package com.j4ltechnologies.formation.java.jdbc.preraredstatements;
 
 import com.j4ltechnologies.formation.java.jdbc.models.Stagiaire;
 import com.j4ltechnologies.formation.java.jdbc.utils.SimpleDataSource;
 
-public class SelectAll {
+import java.sql.*;
 
+/**
+ * Classe SelectAll, créée le 22/04/2021 à 19:31
+ *
+ * @author Joachim Zadi
+ * @version 1.0 du 22/04/2021
+ */
+public class SelectAll {
     public static void main(String[] args) {
         final String REQUETE = "select * from stagiaire";
         try {
             SimpleDataSource.init("mysqlParam");
             try (
                     Connection connection = SimpleDataSource.getConnection();
-                    Statement statement = connection.createStatement();
+                    PreparedStatement ps = connection.prepareStatement(REQUETE);
             ) {
-                ResultSet rs = statement.executeQuery(REQUETE);
+                ResultSet rs = ps.executeQuery();
                 parcoursResultSet(rs);
             } catch (SQLException e) {
                 e.printStackTrace();
