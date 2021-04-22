@@ -10,6 +10,7 @@
     <modules>
         <module>java-se</module>
         <module>java-ee</module>
+        <module>java-jdbc</module>
     </modules>
 
     <packaging>pom</packaging>
