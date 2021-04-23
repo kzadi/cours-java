@@ -6,6 +6,7 @@
     <modules>
         <module>chap_01_intro_Web_java</module>
         <module>chap_02_app_converter</module>
+        <module>chap_03_crud_jdbc_servlet_jsp</module>
     </modules>
     <parent>
         <artifactId>java</artifactId>

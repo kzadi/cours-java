@@ -10,6 +10,7 @@ public class CreateTable {
 
     public static void main(String[] args) {
 
+    	//DDL -> Data Definition Language ==> Create - Drop - Alter
         final String REQUETE = "create table if not exists stagiaire(" + "id 	int auto_increment,"
                 + "nom 	varchar(20)	not null," + "age	int	not null,"
                 + "created_at	datetime default CURRENT_TIMESTAMP," + "constraint stagiaire_pk primary key(id)" + ")";

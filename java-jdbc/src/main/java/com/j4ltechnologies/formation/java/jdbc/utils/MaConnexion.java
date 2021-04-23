@@ -10,7 +10,8 @@ import java.sql.SQLException;
  * @version 1.0 du 22/04/2021
  */
 public class MaConnexion {
-    private static MaConnexion instance;
+    
+	private static MaConnexion instance;
     private Connection connection;
 
     private MaConnexion() throws ClassNotFoundException, SQLException {
