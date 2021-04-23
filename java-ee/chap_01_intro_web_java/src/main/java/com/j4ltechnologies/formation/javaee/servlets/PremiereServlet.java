@@ -14,7 +14,9 @@ import java.io.IOException;
  */
 public class PremiereServlet extends HttpServlet {
 
-    @Override
+    private static final long serialVersionUID = 1L;
+
+	@Override
     public void init() throws ServletException {
         System.out.println("Init de la servlet " + getClass().getSimpleName());
     }

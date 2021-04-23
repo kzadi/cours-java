@@ -39,6 +39,9 @@ public class Employe {
 		this.role = role;
 	}
 
+	public Employe() {
+	}
+
 	public Integer getId() {
 		return id;
 	}

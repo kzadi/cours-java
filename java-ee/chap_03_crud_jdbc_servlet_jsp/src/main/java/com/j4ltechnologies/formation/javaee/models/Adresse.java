@@ -27,6 +27,9 @@ public class Adresse {
 		this.ville = ville;
 	}
 
+	public Adresse() {
+	}
+
 	public Integer getId() {
 		return id;
 	}
@@ -100,5 +103,5 @@ public class Adresse {
 	public String toString() {
 		return "Adresse [" + id + ", " + nomVoie + ", " + codePostal + ", " + ville + "]";
 	}
-	
+
 }

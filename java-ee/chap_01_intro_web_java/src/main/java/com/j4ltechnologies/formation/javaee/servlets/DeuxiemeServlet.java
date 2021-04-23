@@ -14,7 +14,9 @@ import java.time.LocalTime;
 @WebServlet(name = "DeuxiemeServlet", value = "/deux")
 public class DeuxiemeServlet extends HttpServlet {
 
-    @Override
+    private static final long serialVersionUID = 1L;
+
+	@Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("doGet de la classe " + getClass().getSimpleName());
 
