@@ -1,6 +1,7 @@
 package com.j4ltechnologies.formation.javaee.dao.impl;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -61,24 +62,59 @@ public class AdresseDao implements IAdresseDao {
 	}
 
 	@Override
-	public Adresse findAdresseById(int id) throws Exception {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    public Adresse findAdresseById(int adresseId) throws SQLException {
+        
+        String requete = "select * from adresse where id = ?";
+        Adresse adresse = null;
+        try (PreparedStatement ps = connection.prepareStatement(requete)) {
+            ps.setInt(1, adresseId);
 
-	@Override
-	public Adresse findAdresse(Adresse adresse) throws Exception {
-		// TODO Auto-generated method stub
-		return null;
-	}
+            adresse = getAdresse(adresse, ps);
+        }
+        return adresse;
+    }
 
-	@Override
-	public Adresse addAdresse(Adresse adresse) throws Exception {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    @Override
+    public Adresse findAdresse(Adresse adresse) throws SQLException {
+        
+        String requete = "select * from adresse where nomVoie = ? and codePostal = ?  and ville = ?";
 
-	public Connection getConnection() {
-		return connection;
-	}
+        Adresse adresseResult;
+
+        try (PreparedStatement ps = connection.prepareStatement(requete)) {
+            ps.setString(1, adresse.getNomVoie());
+            ps.setString(2, adresse.getCodePostal());
+            ps.setString(3, adresse.getVille());
+            adresseResult = getAdresse(adresse, ps);
+        }
+        return adresseResult;
+    }
+
+    @Override
+    public Adresse addAdresse(Adresse adresse) throws Exception {
+        
+        String requete = "insert into adresse(nomVoie, codePostal, ville) values(?, ?, ?)";
+        try (PreparedStatement ps = connection.prepareStatement(requete)) {
+            ps.setString(1, adresse.getNomVoie());
+            ps.setString(2, adresse.getCodePostal());
+            ps.setString(3, adresse.getVille());
+            ps.executeUpdate();
+            adresse.setId(getLastId());
+        }
+        return adresse;
+    }
+
+    private Adresse getAdresse(Adresse adresse, PreparedStatement ps) throws SQLException {
+        try (ResultSet rs = ps.executeQuery()) {
+
+            if (rs.next()) {
+                int id = rs.getInt("id");
+                String nomVoie = rs.getString("nomVoie");
+                String codePostal = rs.getString("codePostal");
+                String ville = rs.getString("ville");
+                adresse = new Adresse(id, nomVoie, codePostal, ville);
+            }
+        }
+        return adresse;
+    }
 }
