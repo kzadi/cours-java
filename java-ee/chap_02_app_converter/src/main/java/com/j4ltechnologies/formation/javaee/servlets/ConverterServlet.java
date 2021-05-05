@@ -1,7 +1,6 @@
 package com.j4ltechnologies.formation.javaee.servlets;
 
 import java.io.IOException;
-import java.io.Serial;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
@@ -14,7 +13,6 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/converter")
 public class ConverterServlet extends HttpServlet {
 
-	@Serial
 	private static final long serialVersionUID = 1L;
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)

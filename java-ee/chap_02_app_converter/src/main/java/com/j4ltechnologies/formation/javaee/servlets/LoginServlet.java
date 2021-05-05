@@ -1,9 +1,7 @@
 package com.j4ltechnologies.formation.javaee.servlets;
 
-import com.j4ltechnologies.formation.javaee.models.User;
-
 import java.io.IOException;
-import java.io.Serial;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -11,10 +9,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import com.j4ltechnologies.formation.javaee.models.User;
+
 @WebServlet("/login")
 public class LoginServlet extends HttpServlet {
 
-	@Serial
 	private static final long serialVersionUID = 1L;
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <modules>
+        <module>chap_01_introduction</module>
+        <module>chap_02_variables</module>
+        <module>chap_03_operateurs</module>
+        <module>chap_04_decision</module>
+        <module>chap_05_iteration</module>
+        <module>chap_06_classe_objets</module>
+        <module>chap_07_tableaux</module>
+        <module>chap_08_heritage</module>
+        <module>chap_09_classe_abstract</module>
+        <module>chap_10_interface</module>
+        <module>chap_11_chaine_enumeration</module>
+        <module>chap_12_exceptions</module>
+        <module>chap_13_collections</module>
+        <module>chap_14_jdbc</module>
+    </modules>
+    <parent>
+        <groupId>com.j4ltechnologies.formation.java</groupId>
+        <artifactId>java</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <packaging>pom</packaging>
+
+    <artifactId>java-se-07</artifactId>
+    <properties>
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+</project>
