@@ -10,7 +10,7 @@ import java.util.function.BiConsumer;
  */
 public class TestBiConsumer {
     public static void main(String[] args) {
-        // En Java 8, BiConsumer est une interface fonctionnelle;
+        // En Java 8, une BiConsumer est une interface fonctionnelle;
         // Elle prend deux arguments et ne renvoie rien.
 
         BiConsumer<Integer, Integer> addTwo = (x, y) -> System.out.println(x + y);
