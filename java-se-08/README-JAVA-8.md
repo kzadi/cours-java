@@ -15,3 +15,16 @@ BiPredicate -
 Consumer - 
 BiConsumer - 
 Supplier`
+
+# **2. Expressions Lambda et références de méthodes**
+Java 8 a introduit les expressions lambda pour fournir l'implémentation de la méthode abstraite d' une interface fonctionnelle.
+
+# **3. Streams**
+Java 8 propose l'API Stream pour mettre en oeuvre une approche de la programmation fonctionnelle sachant que Java est et reste un langage orienté objet.
+Les éléments traités par le Stream sont fournis par une source qui peut être de différents types :
+
+`Une collection - 
+Un tableau - 
+Un flux I/O - 
+Une chaîne de caractères - 
+...`
