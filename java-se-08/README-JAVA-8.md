@@ -28,3 +28,5 @@ Un tableau -
 Un flux I/O - 
 Une chaîne de caractères - 
 ...`
+
+ https://www.jmdoudoux.fr/java/dej/chap-streams.htm
