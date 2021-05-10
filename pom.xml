@@ -10,7 +10,7 @@
     <modules>
         <module>java-se-07</module>
         <module>java-se-08</module>
-        <module>java-ee</module>
+        <module>java-se-09</module>
     </modules>
 
     <packaging>pom</packaging>
