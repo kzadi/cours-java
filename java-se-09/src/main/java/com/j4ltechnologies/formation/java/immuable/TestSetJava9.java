@@ -1,4 +1,4 @@
-package com.j4ltechnologies.formation.java.streams;
+package com.j4ltechnologies.formation.java.immuable;
 
 import java.util.List;
 import java.util.Set;
