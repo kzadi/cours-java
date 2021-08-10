@@ -18,6 +18,7 @@
         <module>chap_12_exceptions</module>
         <module>chap_13_collections</module>
         <module>chap_14_jdbc</module>
+        <module>chap_15_swing</module>
     </modules>
     <parent>
         <groupId>com.j4ltechnologies.formation.java</groupId>
