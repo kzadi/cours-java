@@ -1,4 +1,4 @@
-package com.j4ltechnologies.formation.java.jdbc.preraredstatements;
+package com.j4ltechnologies.formation.java.jdbc.preparedstatements;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

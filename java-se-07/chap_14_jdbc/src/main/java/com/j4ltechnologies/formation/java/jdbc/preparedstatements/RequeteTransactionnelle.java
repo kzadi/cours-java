@@ -1,11 +1,10 @@
-package com.j4ltechnologies.formation.java.jdbc.preraredstatements;
+package com.j4ltechnologies.formation.java.jdbc.preparedstatements;
 
 import com.j4ltechnologies.formation.java.jdbc.utils.SimpleDataSource;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.Arrays;
 
 /**

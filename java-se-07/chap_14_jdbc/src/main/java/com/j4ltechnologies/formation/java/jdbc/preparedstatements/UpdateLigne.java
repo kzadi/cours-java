@@ -1,4 +1,4 @@
-package com.j4ltechnologies.formation.java.jdbc.preraredstatements;
+package com.j4ltechnologies.formation.java.jdbc.preparedstatements;
 
 import com.j4ltechnologies.formation.java.jdbc.utils.SimpleDataSource;
 
@@ -19,7 +19,7 @@ public class UpdateLigne {
             SimpleDataSource.init("mysqlParam");
             try (
                     Connection connection = SimpleDataSource.getConnection();
-                    PreparedStatement ps = connection.prepareStatement(REQUETE);
+                    PreparedStatement ps = connection.prepareStatement(REQUETE)
             ) {
                 ps.setInt(1, 21);
                 ps.setString(2, "Paterne");

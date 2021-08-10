@@ -10,10 +10,10 @@ package com.j4ltechnologies.formation.javase.classes;
 public class Compte {
     // Les attributs ==> de preference private
     // L'encapsulation ==> private
-    private String numero;
+    private final String numero;
     private double solde;
 
-    //Attricbut de classe
+    //Attribut de classe
     private static int nbCompte;
 
     // Un constructeur de la classe

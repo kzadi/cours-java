@@ -29,13 +29,13 @@ public class TestBiFunctionChainage {
         System.out.println("resultat = " + resultat);
 
         // La methode generique nous offre beaucoup de possibilité, voyons:
-        resultat = convertir(2, 5, (x, y) -> Math.pow(x, y), d -> String.format("Puissance: %s", String.valueOf(d)));
+        resultat = convertir(2, 5, (x, y) -> Math.pow(x, y), d -> String.format("Puissance: %s", d));
         System.out.println("resultat = " + resultat);
 
-        resultat = convertir(2, 5, (x, y) -> x * y, d -> String.format("Multilication: %s", String.valueOf(d)));
+        resultat = convertir(2, 5, (x, y) -> x * y, d -> String.format("Multilication: %s", d));
         System.out.println("resultat = " + resultat);
 
-        resultat = convertir("a", "b", (a1, a2) -> a1 + a2, d -> String.format("%scde", String.valueOf(d)));
+        resultat = convertir("a", "b", (a1, a2) -> a1 + a2, d -> String.format("%scde", d));
         System.out.println("resultat = " + resultat);
 
         Integer resultatInteger = convertir("100", "150", (a1, a2) -> a1 + a2, d -> Integer.valueOf(d));

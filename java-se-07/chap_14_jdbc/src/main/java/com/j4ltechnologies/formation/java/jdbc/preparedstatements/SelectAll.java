@@ -1,4 +1,4 @@
-package com.j4ltechnologies.formation.java.jdbc.preraredstatements;
+package com.j4ltechnologies.formation.java.jdbc.preparedstatements;
 
 import com.j4ltechnologies.formation.java.jdbc.models.Stagiaire;
 import com.j4ltechnologies.formation.java.jdbc.utils.SimpleDataSource;
@@ -18,7 +18,7 @@ public class SelectAll {
             SimpleDataSource.init("mysqlParam");
             try (
                     Connection connection = SimpleDataSource.getConnection();
-                    PreparedStatement ps = connection.prepareStatement(REQUETE);
+                    PreparedStatement ps = connection.prepareStatement(REQUETE)
             ) {
                 ResultSet rs = ps.executeQuery();
                 parcoursResultSet(rs);

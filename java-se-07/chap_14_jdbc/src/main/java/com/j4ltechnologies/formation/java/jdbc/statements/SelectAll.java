@@ -17,7 +17,7 @@ public class SelectAll {
             SimpleDataSource.init("mysqlParam");
             try (
                     Connection connection = SimpleDataSource.getConnection();
-                    Statement statement = connection.createStatement();
+                    Statement statement = connection.createStatement()
             ) {
                 ResultSet rs = statement.executeQuery(REQUETE);
                 parcoursResultSet(rs);

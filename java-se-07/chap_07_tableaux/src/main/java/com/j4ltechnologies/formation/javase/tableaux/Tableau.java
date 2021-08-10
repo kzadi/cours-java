@@ -56,7 +56,7 @@ public class Tableau {
         System.out.printf("comptes = %s%n", Arrays.toString(comptes));
 
         // Alternativement
-        int[][] counts = { {0, 3, 0}, {0, 0, 1}, {0, 0, 1}, {1, 0, 0}, {0, 0, 1}, {3, 1, 1}, {0, 1, 0}, {1, 0, 1} };
+        int[][] counts = {{0, 3, 0}, {0, 0, 1}, {0, 0, 1}, {1, 0, 0}, {0, 0, 1}, {3, 1, 1}, {0, 1, 0}, {1, 0, 1}};
         System.out.printf("counts = %s%n", Arrays.toString(counts));
 
         // Acces aux elements

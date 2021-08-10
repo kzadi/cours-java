@@ -62,10 +62,7 @@ public class TestStreamFilter {
         // Ou bien ecrire comme suite
         personne = personnes.stream()
                 .filter(p -> {
-                    if (p.getNom().equals("ségolène") && p.getAge() == 24) {
-                        return true;
-                    }
-                    return false;
+                    return p.getNom().equals("ségolène") && p.getAge() == 24;
                 })
                 .findAny()
                 .orElse(null);

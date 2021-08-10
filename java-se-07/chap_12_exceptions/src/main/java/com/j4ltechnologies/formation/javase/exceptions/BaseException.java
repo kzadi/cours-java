@@ -9,7 +9,7 @@ package com.j4ltechnologies.formation.javase.exceptions;
  * @version 1.0 du 15/04/2021
  */
 public abstract class BaseException extends Exception{
-    private String message;
+    private final String message;
 
     public BaseException(String message) {
         this.message = message;

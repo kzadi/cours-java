@@ -49,7 +49,7 @@ public class Chaine {
         System.out.println(salut.substring(0, 3) == "Bon");
 
         // Privilegié la methode equals()
-        System.out.println(salut.substring(0, 3).equals("Bon"));
+        System.out.println(salut.startsWith("Bon"));
         System.out.println(Objects.equals(salut.substring(0, 3), "Bon"));
         System.out.println(salut.startsWith("Bon"));
 

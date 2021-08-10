@@ -16,7 +16,7 @@ public class TestBiConsumer {
         BiConsumer<Integer, Integer> addTwo = (x, y) -> System.out.println(x + y);
         addTwo.accept(1, 2);    // 3
 
-        // Cet exemple accepte BiConsumer comme argument, créez un addTwo générique
+        // Cet exemple accepte BiConsumer comme argument, crée un addTwo générique
         // pour joindre deux objets.
         addTwo(1, 2, (x, y) -> System.out.println(x + y));          // 3
         addTwo("Java", "FX", (x, y) -> System.out.println(x + y)); // JavaFX

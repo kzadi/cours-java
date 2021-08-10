@@ -10,7 +10,7 @@ public enum Jour {
 
     Lundi("Lu"), Mardi("Ma"), Mercredi("Me"), Jeudi("Je"), Vendredi("Ve"), Samedi("Sa"), Dimanche("Di");
 
-    private String abreviation;
+    private final String abreviation;
 
     Jour(String abreviation) {
         this.abreviation = abreviation;

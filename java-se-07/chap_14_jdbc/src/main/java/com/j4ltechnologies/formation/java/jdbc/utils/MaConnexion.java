@@ -12,7 +12,7 @@ import java.sql.SQLException;
 public class MaConnexion {
     
 	private static MaConnexion instance;
-    private Connection connection;
+    private final Connection connection;
 
     private MaConnexion() throws ClassNotFoundException, SQLException {
         SimpleDataSource.init("mysqlParam");

@@ -12,7 +12,7 @@ import java.time.Period;
 public class Personne {
 
     private String prenom;
-    private Integer age;
+    private final Integer age;
     private Personne conjoint;
 
     public Personne(String prenom, Integer age) {

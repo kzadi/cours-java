@@ -7,6 +7,6 @@ package com.j4ltechnologies.formation.javase.interfaces;
  * @version 1.0 du 21/04/2021
  */
 public interface IMusicien {
-    public static int compteur = 0;
+    int compteur = 0;
     String jouerInstrument();
 }
