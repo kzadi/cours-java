@@ -6,7 +6,7 @@
 
     <parent>
         <artifactId>java</artifactId>
-        <groupId>com.j4ltechnologies.formation.java</groupId>
+        <groupId>dev.jzadi.formation.java</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
